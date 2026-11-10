@@ -1,0 +1,23 @@
+{
+  "estimate_activity_emissions": "scripts/01_inventory/estimate_activity_emissions.py",
+  "allocate_development_emissions": "scripts/01_inventory/allocate_development_emissions.py",
+  "aggregate_production_to_pads": "scripts/01_inventory/aggregate_production_to_pads.py",
+  "build_production_inventory": "scripts/01_inventory/build_production_inventory.py",
+  "estimate_compressor_emissions": "scripts/01_inventory/estimate_compressor_emissions.py",
+  "interpolate_facility_emissions": "scripts/01_inventory/interpolate_facility_emissions.py",
+  "prepare_era5": "scripts/02_meteorology/prepare_era5.py",
+  "inspect_surface_fields": "scripts/02_meteorology/inspect_surface_fields.py",
+  "complete_surface_fields": "scripts/02_meteorology/complete_surface_fields.py",
+  "run_aermet": "scripts/02_meteorology/run_aermet.py",
+  "check_aermet": "scripts/02_meteorology/check_aermet.py",
+  "run_aermap": "scripts/03_supporting/run_aermap.py",
+  "build_receptor_mapping": "scripts/03_supporting/build_receptor_mapping.py",
+  "run_drilling_completion": "scripts/04_dispersion/run_drilling_completion.py",
+  "run_production": "scripts/04_dispersion/run_production.py",
+  "run_compressors": "scripts/04_dispersion/run_compressors.py",
+  "run_other_tier2": "scripts/04_dispersion/run_other_tier2.py",
+  "compile_concentrations": "scripts/05_postprocessing/compile_concentrations.py",
+  "create_concentration_netcdf": "scripts/05_postprocessing/create_concentration_netcdf.py",
+  "create_source_contributions": "scripts/05_postprocessing/create_source_contributions.py",
+  "prepare_model_inputs": "scripts/00_inputs/prepare_model_inputs.py"
+}

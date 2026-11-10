@@ -1,0 +1,5 @@
+# Selected other Tier 2 emissions
+
+Uses inputs/source_data/other_tier2/facility_selection.csv, nei_annual.csv and production_driver.csv. source_id is an identifier, not a numeric quantity. The selection table uses include_in_other_tier2 true/false. Annual NEI mass is in raw_annual_emission; the supplied prepared values are metric tonnes. Production remains in its stored consistent units; no additional conversion is inferred.
+
+Run this saved Python file with TRIMAQS_DATA_ROOT set. It uses the selected 2011, 2014, 2017 and 2020 totals to derive production-normalized factors, interpolates/extrapolates their logarithms, and distributes monthly masses using the archived IDW/Gaussian method. Checks enforce monthly mass conservation. Outputs are source/year/pollutant rows with jan_tonnes through dec_tonnes in working/inventory/other_tier2. These are intermediate tables; final AERMOD inventory schemas are prepared separately. Do not use the generic all-facility interpolation utility to replace the selected study inventory.
